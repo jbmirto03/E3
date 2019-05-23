@@ -15,9 +15,9 @@ using namespace std;
 int main()
 
 {
-	int number; // declaration for number, not constant because value changes in loop
-	const int count = 7; // constant declaration for the no. of days per week
-    float pva[count], pvb[count], pvc[count]; // float array declaration (each province has its own array with its size = no. of days per week
+	int number; // Declaration for number, not constant because value changes in loop
+	const int count = 7; // Constant declaration for the no. of days per week
+    float pva[count], pvb[count], pvc[count]; // Float array declaration (each province has its own array with its size = no. of days per week)
     
     // This loop stores inputted values in Province A
     for(number = 0; number < count; number++)	{ // for initiated "number = 0," while less than the total no. of days, increment until value of count is met

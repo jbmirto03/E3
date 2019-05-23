@@ -19,27 +19,26 @@ int main()
 	const int count = 10; // constant declaration for the total no. of elements
 
     // This loop stores inputted values in the array
-    for (number = 0; number < count; ++number)	{
-       cout << "Enter integer " << number + 1 << " : ";
-       cin >> arr[number];
+    for (number = 0; number < count; number++)	{
+       cout << "Enter integer " << number + 1 << " : ";	cin >> arr[number]; // Displays element number/position while a user inputs
     }
     
     // This loop stores the LARGEST inputted value in arr[0]
 	largest = arr[0];
-	for (number = 0; number < count; ++number) {
+	for (number = 0; number < count; number++) {
 		if(largest < arr[number])
 			largest = arr[number];
 	}
 	
 	// This loop stores the SMALLEST inputted value in arr[1]
 	smallest = arr[1];
-	for (number = 0; number < count; ++number) {
+	for (number = 0; number < count; number++) {
 		if(smallest > arr[number])
 			smallest = arr[number];
 	}
 	
 	// This loop stores calculates the total/sum of the inputted values in the array
-	for (number = 0; number < count; ++number) {
+	for (number = 0; number < count; number++) {
 			total += arr[number]; // read as: total = total (gets value from the array during the first loop) + array value
 	}
 	

@@ -19,11 +19,25 @@ using namespace std;
 int main()
 
 {
-	char arr[] = {'e', 'n', 'g', '1', '9', '0', '7'}; // character array declaration
+	char arr[100]; // Character array declaration, 100 is a placeholder value (this is to say that it can hold a total of 100 elements)
+	int number, count; // Integer declaration for number (not constant because value changes in loop), and count (responsible for changing the size of the array)
 	
-	// display array content in custom order as described in the instructions
-	cout << arr[5]; cout << arr[3]; cout << arr[6]; cout << arr[4]; cout << arr[0]; cout << arr[2]; cout << arr[1] << endl;
-	cout << "The array size is: " << sizeof(arr); // sizeof(array name) calculates the size of the array
+	cout << "Enter number of elements in Array: ";	cin >> count;
+	cout << "Enter exactly " << count << " elements in Array: ";
+	
+	// This loop stores inputted characters in the array
+	for(number = 0; number < count ; number++)	{
+   		cin >> arr[number];
+	}
+	
+	cout << "\nReverse of Array: ";
+
+	// This loop reverses the inputted characters in the array
+	for (number = count; number >= 0; number--)	{ // Logic used in reversing the characters
+        cout << arr[number];
+    }
+	
+	cout << "\nSize of Array: " << count;
 	
 	_getch();
     return 0;
